@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in — OmahTI PRESS</title>
+    <link rel="stylesheet" href="/css/signin.css" />
+</head>
+<body>
+    <div class="mainbody">
+        <div class="title">
+            <h1>OMAHTI PRESS</h1>
+            <a href="home.html">BACK</a>
+            <img href src="/src/moon.png" class="moon" id="icon" />
+        </div>
+
+        <div class="login-section">
+            <div class="login">
+                <form action="">
+                    <h1>Sign In/Sign Up</h1>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Username/Email" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+            
+                    <div class="remember">
+                        <label><input type="checkbox" /> Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+    
+                    <button type="submit" class="loginbutton">Sign In</button>
+    
+                    <div class="register">
+                        <p>Don't have an account?
+                            <a href="#">Register</a>
+                        </p>
+                    </div>
+                </form>
+
+                <div class="policy">
+                    <p>By continuing, you agree to the 
+                        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+
+                <div class="continue">
+                    <div class="cbutton">
+                        <img src="/src/google.png" class="icon" />
+                        <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Continue with Google</a>
+                    </div>
+                    <div class="cbutton">
+                        <img src="/src/facebook.png" class="icon" />
+                        <a href="https://id-id.facebook.com/login.php/">Continue with Facebook</a>
+                    </div>
+                    <div class="cbutton">
+                        <img src="/src/instagram.png" class="icon" />
+                        <a href="https://www.instagram.com/accounts/login/">Continue with Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Omah TI</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Help</a>
+        <a href="#">Contact Us</a>
+    </footer>
+
+    <script>
+        let element = document.body;
+        let content = document.getElementById("icon");
+
+        content.onclick = function(){
+            document.body.classList.toggle("dark");
+            content.classList.toggle("rotate");
+            if(document.body.classList.contains("dark")){
+                icon.src = "/src/sun.png";
+            }else{
+                icon.src = "/src/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>

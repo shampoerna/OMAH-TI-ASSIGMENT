@@ -1,0 +1,15 @@
+- Efek Hover pada bagian:
+    1. Navbar
+    2. Sign In/Sign Up
+    3. Card
+    4. Topics
+    5. Writer
+    6. Footer (Information, *Link pada Subscribe, dan Email placeholder@mail.ugm.ac.id)
+- Penambahan Dark Mode dengan Javascript.
+- Penambahan animasi On Click pada icon change Dark Mode dengan Javascript.
+- Transisi saat berganti menjadi Dark Mode dan sebaliknya.
+- Penambahan SIGN IN/SIGN UP Page
+	1. Dark Mode
+	2. Efek Hover
+    3. Back
+	4. Link Continue With Google, Facebook, dan Instagram

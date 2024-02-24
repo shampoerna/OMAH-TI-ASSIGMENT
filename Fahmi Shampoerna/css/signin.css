@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --first-color: #F2F1F0;
+    --second-color: #2C2828;
+    --third-color: #D23636;
+    --fourth-color: #FFFFFF;
+    --fifth-color: #858585;
+    --sixth-color: #000000;
+    --seventh-color: #1B1B1B;
+}
+
+.dark {
+    --first-color: #2C2828;
+    --second-color: #F2F1F0;
+    --third-color: #D23636;
+    --fourth-color: #000000;
+    --fifth-color: #858585;
+    --sixth-color: #FFFFFF;
+    --seventh-color: #F2F1F0;
+}
+
+body {
+    background-color: var(--first-color);
+    transition: background-color 0.5s ease;
+}
+
+.mainbody {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.title {
+    padding: 2rem;
+    border: 1px solid var(--second-color);
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.title h1{
+    color: var(--third-color);
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.moon {
+    height: 22px;
+    position: absolute;
+    margin-top: 0.7rem;
+    right: 100px;
+    transition: 1s;
+}
+
+#icon {
+    cursor: pointer;
+}
+
+.rotate {
+    transition: transform 1s;
+    transform: rotate(360deg);
+}
+
+.title a {
+    height: 22px;
+    position: absolute;
+    margin-top: 0.7rem;
+    left: 95px;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: var(--third-color);
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 73.5vh;
+}
+
+.login {
+    width: 600px;
+    background-color: var(--second-color);
+    padding: 10px 100px;
+    border-radius: 40px;
+    color: var(--first-color);
+    transition: background-color 0.5s ease;
+}
+
+.login h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.login .inputbox {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid var(--first-color);
+    border-radius: 40px;
+    color: var(--first-color);
+    padding: 20px 45px 20px 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.inputbox input::placeholder {
+    color: var(--fifth-color);
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.remember label input {
+    accent-color: var(--first-color);
+    margin-right: 4px;
+}
+
+.remember a {
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.loginbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: var(--third-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px var(--first-color);
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.loginbutton:hover {
+    background-color: var(--first-color);
+    color: var(--third-color);
+    transition: background-color 0.5s ease;
+}
+
+.register {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register p a {
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.register p a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+
+.policy {
+    font-size: 13px;
+    margin-bottom: 10px;
+    border-top: 1px solid var(--first-color);
+    padding-top: 10px;
+}
+
+.policy p a {
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.policy p a:hover {
+    color: var(--third-color);
+}
+
+.continue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.continue a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.cbutton {
+    background-color: var(--first-color);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.cbutton:hover {
+    background-color: var(--third-color);
+}
+
+.icon {
+    clip-path: circle();
+    width: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--second-color);
+    padding: 10px;
+    color: var(--first-color);
+    transition: background-color 0.5s ease;
+}
+
+.footer a{
+    color: var(--first-color);
+}
+
+.footer a:hover {
+    color: var(--third-color);
+}
